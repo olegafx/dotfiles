@@ -46,6 +46,7 @@ install tree
 
 # Install brew cask module
 tap phinze/homebrew-cask
+tap homebrew/versions
 install brew-cask
 
 # Install native apps
@@ -57,16 +58,22 @@ cask install dropbox
 cask install evernote
 cask install iterm2
 cask install onepassword
-cask install phpstorm
 cask install skype
 cask install steam
-cask install sublime
 cask install subtitles
-cask install tunnelblick
 cask install vagrant
 cask install virtualbox
 cask install vlc
 cask install utorrent
+
+# Install native experimental apps
+cask install google-chrome-canary
+cask install phpstorm-eap
+cask install sublime-text-3
+cask install tunnelblick-beta
+
+# Search through brew apps with Alfred
+cask alfred link
 
 # Remove outdated versions from the cellar
 cleanup

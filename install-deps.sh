@@ -12,7 +12,7 @@ chmod +x ~/code/z/z.sh
 
 # https://github.com/jeroenbegyn/VLCControl
 # VLC Controll Script
-cd ~/code
+cd ~/git
 git clone git://github.com/jeroenbegyn/VLCControl.git
 
 

@@ -1,0 +1,13 @@
+default_username='olegafx'
+
+export TERM=xterm-256color
+
+MAGENTA=$(tput setaf 9)
+ORANGE=$(tput setaf 172)
+GREEN=$(tput setaf 190)
+PURPLE=$(tput setaf 141)
+WHITE=$(tput setaf 256)
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+
+PS1="${GREEN}$default_username${RESET} "

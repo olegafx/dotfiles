@@ -1,0 +1,20 @@
+# Programs
+alias subl='open -a "Sublime Text"'
+
+# handy things
+alias vlc="osascript ~/git/VLCControl/VLCControl.scpt"
+
+# Colorize ls output
+alias ls="ls -G"
+alias lsa="ls -aG"
+alias lsl="ls -lG"
+alias lsla="ls -laG"
+
+# Git aliases
+alias gs="git status"
+
+# `cat` with beautiful colors. requires Pygments installed.
+alias ccat='pygmentize -O style=monokai -f console256 -g'
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"

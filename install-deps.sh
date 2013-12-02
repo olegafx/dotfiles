@@ -1,14 +1,11 @@
-# cli developer tools on Mavericks
-xcode-select --install
-
-
 # homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 
 # https://github.com/rupa/z
 # z binary is already referenced from .bash_profile
-cd ~/code
+mkdir ~/git
+cd ~/git
 git clone https://github.com/rupa/z.git
 chmod +x ~/code/z/z.sh
 

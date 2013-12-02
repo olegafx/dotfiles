@@ -12,6 +12,7 @@ install findutils
 
 # Install latest Bash and Zsh
 install bash
+install bash-completion
 install zsh
 
 # Install git

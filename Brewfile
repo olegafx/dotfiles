@@ -34,6 +34,7 @@ tap josegonzalez/homebrew-php
 install php55
 
 install ack
+install ffmpeg
 install lynx
 install node
 install pigz
@@ -53,10 +54,14 @@ cask install beamer
 cask install caffeine
 cask install chrome
 cask install dropbox
+cask install evernote
 cask install iterm2
+cask install onepassword
+cask install phpstorm
 cask install skype
 cask install steam
 cask install sublime
+cask install subtitles
 cask install tunnelblick
 cask install vagrant
 cask install virtualbox

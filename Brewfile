@@ -1,3 +1,4 @@
+
 # Make sure we’re using the latest Homebrew
 update
 
@@ -40,6 +41,7 @@ install node
 install pigz
 install python
 install python3
+linkapps
 install ruby-install
 install rename
 install tree
@@ -53,10 +55,9 @@ install brew-cask
 cask install alfred
 cask install beamer
 cask install caffeine
-cask install chrome
+cask install google-chrome
 cask install dropbox
 cask install evernote
-cask install iterm2
 cask install onepassword
 cask install skype
 cask install steam
@@ -67,7 +68,9 @@ cask install vlc
 cask install utorrent
 
 # Install native experimental apps
+tap caskroom/versions
 cask install google-chrome-canary
+cask install iterm2-beta
 cask install phpstorm-eap
 cask install sublime-text-3
 cask install tunnelblick-beta

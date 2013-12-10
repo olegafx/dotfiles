@@ -9,7 +9,7 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/git/z/z.sh
+. ~/code/z/z.sh
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob

@@ -56,6 +56,7 @@ cask install alfred
 cask install beamer
 cask install caffeine
 cask install google-chrome
+cask install google-drive
 cask install dropbox
 cask install evernote
 cask install onepassword

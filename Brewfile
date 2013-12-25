@@ -1,4 +1,3 @@
-
 # Make sure we’re using the latest Homebrew
 update
 
@@ -73,7 +72,7 @@ tap caskroom/versions
 cask install google-chrome-canary
 cask install iterm2-beta
 cask install phpstorm-eap
-cask install sublime-text-3
+cask install sublime-text3
 cask install tunnelblick-beta
 
 # Search through brew apps with Alfred

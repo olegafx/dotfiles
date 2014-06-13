@@ -44,6 +44,7 @@ linkapps
 install ruby-install
 install rename
 install tree
+install ncdu
 
 # Install brew cask module
 tap phinze/homebrew-cask

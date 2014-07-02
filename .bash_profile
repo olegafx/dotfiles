@@ -1,5 +1,5 @@
 # Use brew apps instead of osx apps
-export PATH=/usr/local/bin:$(brew --prefix ruby)/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit

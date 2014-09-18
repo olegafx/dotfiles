@@ -61,6 +61,9 @@ cask install dropbox
 cask install evernote
 cask install onepassword
 cask install skype
+cask install slate
+cask install spotifree
+cask install spotify
 cask install steam
 cask install subtitles
 cask install vagrant

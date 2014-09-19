@@ -55,10 +55,12 @@ install brew-cask
 cask install alfred
 cask install beamer
 cask install caffeine
+cask install cheatsheet
 cask install google-chrome
 cask install google-drive
 cask install dropbox
 cask install evernote
+cask install iterm2
 cask install onepassword
 cask install skype
 cask install slate
@@ -69,13 +71,12 @@ cask install subtitles
 cask install vagrant
 cask install virtualbox
 cask install vlc
+cask install webstorm
 cask install utorrent
 
 # Install native experimental apps
 tap caskroom/versions
 cask install google-chrome-canary
-cask install iterm2-beta
-cask install phpstorm-eap
 cask install sublime-text3
 cask install tunnelblick-beta
 

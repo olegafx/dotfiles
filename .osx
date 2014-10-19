@@ -1,2 +1,2 @@
 # Show hidden files in Mavericks
-defaults write com.apple.finder AppleShowAllFiles TRUEs
+defaults write com.apple.finder AppleShowAllFiles TRUE

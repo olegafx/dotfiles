@@ -3,6 +3,7 @@ alias subl='open -a "Sublime Text"'
 
 # handy things
 alias vlc="osascript ~/git/VLCControl/VLCControl.scpt"
+alias duh="du -h -d 1 ."
 
 # Colorize ls output
 alias ls="ls -G"

@@ -1,0 +1,58 @@
+/* Hide titlebar icons */
+
+.title-actions > .monaco-toolbar > .monaco-action-bar > .actions-container > .action-item > .action-label.icon.explorer-action {
+  display: none !important;
+}
+
+.editor-actions > .monaco-toolbar > .monaco-action-bar {
+  display: none !important;
+}
+
+/* Change titlebar title */
+
+.monaco-workbench > .sidebar > .title > .title-label span {
+  font-weight: 800 !important;
+}
+
+/* Change sidebar file and folder items */
+
+.monaco-tree .monaco-tree-rows > .monaco-tree-row {
+  color: rgb(101, 115, 127);
+  font-size: 11px !important;
+  font-weight: 600 !important;
+}
+
+/* Change sidebar folder arrows */
+.monaco-tree-row {
+  --greyArrow: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='rgb(100, 114, 127)' d='M38 32.074C28.39 41.704 18.382 51.736 8.142 62l-5.436-6.01 24.062-24.012L2 7.478C4.516 5.23 6.49 3.467 8.127 2L38 32.074z'/%3E%3C/svg%3E");
+  --whiteArrow: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='rgb(255, 255, 255)' d='M38 32.074C28.39 41.704 18.382 51.736 8.142 62l-5.436-6.01 24.062-24.012L2 7.478C4.516 5.23 6.49 3.467 8.127 2L38 32.074z'/%3E%3C/svg%3E");
+}
+
+.file-icon-themable-tree .monaco-tree-row .content:before {
+  background-size: 10px !important;
+}
+
+.monaco-tree-row.has-children .content:before {
+  background-image: var(--greyArrow) !important;
+  transform: translateX(2px) !important;
+}
+
+.monaco-tree-row:hover:not(.highlighted).has-children .content:before {
+  background-image: var(--whiteArrow) !important;
+  transform: translateX(2px) !important;
+}
+
+.monaco-tree-row.has-children.expanded .content:before {
+  background-image: var(--greyArrow) !important;
+  transform: rotate(90deg) translateX(2px) !important;
+}
+
+.monaco-tree-row.has-children.expanded.selected:not(.highlighted) .content:before {
+  background-image: var(--whiteArrow) !important;
+  transform: rotate(90deg) translateX(2px) !important;
+}
+
+.monaco-tree-row:hover:not(.highlighted).has-children.expanded .content:before {
+  background-image: var(--whiteArrow) !important;
+  transform: rotate(90deg) translateX(2px) !important;
+}

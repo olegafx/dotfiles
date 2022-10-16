@@ -1,3 +1,5 @@
+ulimit -n 65536 unlimited
+
 export HOMEBREW_NO_AUTO_UPDATE=1
 export CODE_PATH="$HOME/code"
 

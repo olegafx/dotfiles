@@ -2,12 +2,17 @@ brew install bat
 brew install exa
 brew install git
 brew install git-delta
+brew install jq
 brew install neovim
 brew install rlwrap
+brew install starship
 brew install telnet
 brew install tmux
 brew install z
 brew install zsh
+
+brew install awscli
+brew install kubectl
 
 brew install jesseduffield/lazygit/lazygit
 

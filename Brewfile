@@ -1,5 +1,6 @@
 brew install bat
 brew install exa
+brew install gh
 brew install git
 brew install git-delta
 brew install jq

@@ -9,7 +9,7 @@ brew install rlwrap
 brew install starship
 brew install telnet
 brew install tmux
-brew install z
+brew install zoxide
 brew install zsh
 
 brew install awscli

@@ -9,10 +9,6 @@ PATH="/opt/homebrew/bin:$PATH"
 
 source "$HOME/.aliases"
 
-if command -v brew >/dev/null 2>&1; then
-	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-fi
-
 if which ruby >/dev/null && which gem >/dev/null; then
   PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 fi
@@ -34,6 +30,8 @@ source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 export FZF_COMPLETION_TRIGGER='ff'
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 source "$CODE_PATH/fzf-tab/fzf-tab.plugin.zsh"
+
+eval "$(zoxide init zsh)"
 
 # disable sort when completing `git checkout`
 zstyle ':completion:*:git-checkout:*' sort false

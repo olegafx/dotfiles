@@ -12,6 +12,7 @@ brew install tmux
 brew install zoxide
 brew install zsh
 
+brew install gpg
 brew install openssl
 brew install asdf
 

@@ -22,9 +22,6 @@ PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH
 
 PATH="$HOME/.yarn/bin:$PATH"
 
-export VOLTA_HOME="$HOME/.volta"
-PATH="$VOLTA_HOME/bin:$PATH"
-
 PATH=~/.console-ninja/.bin:$PATH
 
 PATH="/opt/homebrew/opt/icu4c/bin:$PATH"

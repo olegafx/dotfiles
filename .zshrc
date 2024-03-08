@@ -25,6 +25,12 @@ PATH="$HOME/.yarn/bin:$PATH"
 export VOLTA_HOME="$HOME/.volta"
 PATH="$VOLTA_HOME/bin:$PATH"
 
+PATH=~/.console-ninja/.bin:$PATH
+
+PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
+PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
+PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export FZF_COMPLETION_TRIGGER='ff'
@@ -45,3 +51,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
 
 export PATH
+
+export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh

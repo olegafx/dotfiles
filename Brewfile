@@ -12,6 +12,13 @@ brew install tmux
 brew install zoxide
 brew install zsh
 
+brew install openssl
+brew install asdf
+
+brew install icu4c
+brew install libpg
+brew install overmind
+
 brew install awscli
 brew install kubectl
 

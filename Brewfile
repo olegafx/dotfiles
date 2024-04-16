@@ -4,13 +4,17 @@ brew install gh
 brew install git
 brew install git-delta
 brew install jq
-brew install neovim
 brew install rlwrap
 brew install starship
 brew install telnet
 brew install tmux
 brew install zoxide
 brew install zsh
+
+brew install stow
+
+brew install neovim
+brew install ripgrep
 
 brew install gpg
 brew install openssl

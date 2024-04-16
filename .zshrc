@@ -28,6 +28,8 @@ PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
+source "$HOME/.config/op/plugins.sh"
+
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export FZF_COMPLETION_TRIGGER='ff'

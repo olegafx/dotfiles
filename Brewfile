@@ -18,7 +18,7 @@ brew install ripgrep
 
 brew install gpg
 brew install openssl
-brew install asdf
+brew install mise
 
 brew install icu4c
 brew install libpg

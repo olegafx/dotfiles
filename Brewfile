@@ -32,5 +32,7 @@ brew install jesseduffield/lazygit/lazygit
 brew install fzf
 /opt/homebrew/opt/fzf/install
 
+brew install hyperfine
+
 brew install --cask karabiner-elements
 brew install --cask raycast

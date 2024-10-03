@@ -56,3 +56,17 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 eval "$(mise activate zsh)"
+
+function git-list-squash-merged() {
+  local target_branch=${1:-develop}
+  local branch
+
+  while IFS= read -r branch; do
+    if [[ "$branch" != "$target_branch" ]]; then
+      local merge_base=$(git merge-base $target_branch $branch)
+      if [[ $(git cherry $target_branch $(git commit-tree $(git rev-parse $branch^{tree}) -p $merge_base -m _)) == "-"* ]]; then
+        echo $branch
+      fi
+    fi
+  done < <(git for-each-ref refs/heads/ --format='%(refname:short)')
+}

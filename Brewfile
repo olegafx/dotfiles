@@ -17,6 +17,7 @@ brew install neovim
 brew install ripgrep
 
 brew install gpg
+brew install libyaml
 brew install openssl
 brew install mise
 

@@ -1,3 +1,4 @@
+alias c="open $1 -a \"Cursor\""
 alias cbat="bat --paging never"
 alias d8="rlwrap $CODE_PATH/v8/out.gn/x64.debug/d8 --allow-natives-syntax"
 alias ga="git add"
@@ -23,6 +24,7 @@ alias oc="overmind connect"
 alias or="overmind restart"
 alias os="overmind start"
 alias osl="overmind start -l"
+alias v="open -a \"Visual Studio Code\""
 alias vim="nvim"
 
 alias td="bundle && yarn && rails db:migrate && rails tmp:cache:clear && rails i18n:js:export"

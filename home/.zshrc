@@ -28,7 +28,7 @@ PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
-source "$HOME/.config/op/plugins.sh"
+# source "$HOME/.config/op/plugins.sh"
 
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
@@ -58,7 +58,29 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 eval "$(mise activate zsh)"
 
 function git-list-squash-merged() {
-  local target_branch=${1:-develop}
+  local target_branch="$1"
+  
+  # If no target branch provided, get default branch from remote
+  if [[ -z "$target_branch" ]]; then
+    target_branch=$(git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null | sed 's@^refs/remotes/origin/@@')
+    
+    # Fallback to common branch names if symbolic-ref fails
+    if [[ -z "$target_branch" ]]; then
+      for candidate in main master develop dev; do
+        if git show-ref --verify --quiet refs/heads/"$candidate"; then
+          target_branch="$candidate"
+          break
+        fi
+      done
+    fi
+    
+    # Final fallback if nothing works
+    if [[ -z "$target_branch" ]]; then
+      echo "Error: Could not determine default branch. Please specify one explicitly."
+      return 1
+    fi
+  fi
+  
   local branch
 
   while IFS= read -r branch; do
@@ -70,3 +92,9 @@ function git-list-squash-merged() {
     fi
   done < <(git for-each-ref refs/heads/ --format='%(refname:short)')
 }
+
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac

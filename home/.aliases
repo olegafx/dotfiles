@@ -1,7 +1,6 @@
 alias c="open $1 -a \"Cursor\""
 alias cbat="bat --paging never"
 alias cl="claude"
-alias claude="~/.claude/local/claude"
 alias d8="rlwrap $CODE_PATH/v8/out.gn/x64.debug/d8 --allow-natives-syntax"
 alias ga="git add"
 alias gaa="git add -A"

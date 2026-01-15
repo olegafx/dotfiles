@@ -6,6 +6,7 @@ export DOTFILES_PATH="$CODE_PATH/dotfiles"
 
 PATH="/usr/local/bin:$PATH"
 PATH="/opt/homebrew/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 source "$HOME/.aliases"
 

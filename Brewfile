@@ -20,6 +20,7 @@ brew install gpg
 brew install libyaml
 brew install openssl
 brew install mise
+brew install uv
 
 brew install icu4c
 brew install libpg

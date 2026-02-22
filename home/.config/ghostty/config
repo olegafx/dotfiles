@@ -3,3 +3,6 @@ font-size = 14
 font-thicken = true
 adjust-cell-height = 12%
 theme = fx
+window-save-state = always
+cursor-style = bar
+adjust-cursor-thickness = 3

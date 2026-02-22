@@ -1,8 +1,8 @@
 background = #161719
 foreground = #ffffff
 cursor-color = #c0c5cd
-selection-background = #c0c5cd
-selection-foreground = #161719
+selection-background = #3c5173
+selection-foreground = #ffffff
 
 # normal: black, red, green, yellow, blue, magenta, cyan, white
 palette = 0=#000000

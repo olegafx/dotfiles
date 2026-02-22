@@ -2,7 +2,7 @@ background = #161719
 foreground = #ffffff
 cursor-color = #c0c5cd
 selection-background = #3c5173
-selection-foreground = #ffffff
+selection-foreground = cell-foreground
 
 # normal: black, red, green, yellow, blue, magenta, cyan, white
 palette = 0=#000000

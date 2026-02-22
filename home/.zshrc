@@ -29,7 +29,7 @@ PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
-# source "$HOME/.config/op/plugins.sh"
+source "$HOME/.config/op/plugins.sh"
 
 pet() {
   export PET_GITHUB_ACCESS_TOKEN=$(op read "op://Private/GitHub Pet Token/token")

@@ -27,6 +27,7 @@ brew install libpg
 brew install overmind
 
 brew install awscli
+brew install glab
 brew install kubectl
 
 brew install jesseduffield/lazygit/lazygit

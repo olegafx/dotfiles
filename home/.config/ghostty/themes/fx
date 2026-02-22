@@ -1,0 +1,25 @@
+background = #161719
+foreground = #ffffff
+cursor-color = #c0c5cd
+selection-background = #c0c5cd
+selection-foreground = #161719
+
+# normal: black, red, green, yellow, blue, magenta, cyan, white
+palette = 0=#000000
+palette = 1=#cf3d41
+palette = 2=#9ecb4d
+palette = 3=#e7ce61
+palette = 4=#4aa4c9
+palette = 5=#f167a7
+palette = 6=#badfdd
+palette = 7=#ffffff
+
+# bright: black, red, green, yellow, blue, magenta, cyan, white
+palette = 8=#8e8e8e
+palette = 9=#ffc4bd
+palette = 10=#d6fcb9
+palette = 11=#fefdd5
+palette = 12=#c1e3fe
+palette = 13=#ffb1fe
+palette = 14=#e5e6fe
+palette = 15=#feffff

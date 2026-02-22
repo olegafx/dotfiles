@@ -1,0 +1,5 @@
+font-family = Hack
+font-size = 14
+font-thicken = true
+adjust-cell-height = 12%
+theme = fx

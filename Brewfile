@@ -37,5 +37,6 @@ brew install fzf
 brew install battery
 brew install hyperfine
 
+brew install --cask font-hack
 brew install --cask karabiner-elements
 brew install --cask raycast

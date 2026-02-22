@@ -31,6 +31,11 @@ PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # source "$HOME/.config/op/plugins.sh"
 
+pet() {
+  export PET_GITHUB_ACCESS_TOKEN=$(op read "op://Private/GitHub Pet Token/token")
+  command pet "$@"
+}
+
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export FZF_COMPLETION_TRIGGER='ff'

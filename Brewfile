@@ -36,7 +36,9 @@ brew install fzf
 
 brew install battery
 brew install hyperfine
+brew install knqyf263/pet/pet
 
+brew install --cask 1password-cli
 brew install --cask font-hack
 brew install --cask karabiner-elements
 brew install --cask raycast

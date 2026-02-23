@@ -39,6 +39,8 @@ pet() {
 source "$CODE_PATH/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
+autoload -Uz compinit && compinit
+
 export FZF_COMPLETION_TRIGGER='ff'
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 source "$CODE_PATH/fzf-tab/fzf-tab.plugin.zsh"
@@ -52,8 +54,10 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*:descriptions' format '[%d]'
 # set list-colors to enable filename colorizing
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-# preview directory's content with eza when completing cd
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+# preview directory content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always --icons $realpath'
+# preview files and directories for any file completion
+zstyle ':fzf-tab:complete:*:*' fzf-preview 'if [[ -d $realpath ]]; then eza -1 --color=always --icons $realpath; elif [[ -f $realpath ]]; then bat --style=numbers --color=always --line-range=:50 $realpath 2>/dev/null || cat $realpath; fi'
 # switch group using `,` and `.`
 zstyle ':fzf-tab:*' switch-group ',' '.'
 

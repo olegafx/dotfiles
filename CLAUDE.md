@@ -11,6 +11,7 @@ Config files are managed with GNU Stow. The `home/` directory mirrors `~/`.
 ## Commits
 
 - Follow conventional commits: `chore(scope): description`.
+- Always include a scope. Use the app or folder name when changes share a common area (e.g. `ghostty`, `zsh`). For broader changes, use a general scope (e.g. `dotfiles`, `tools`).
 - Don't push without asking.
 
 ## Packages

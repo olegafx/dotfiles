@@ -43,5 +43,7 @@ brew install knqyf263/pet/pet
 
 brew install --cask 1password-cli
 brew install --cask font-hack
+brew tap manaflow-ai/cmux
+brew install --cask cmux
 brew install --cask karabiner-elements
 brew install --cask raycast

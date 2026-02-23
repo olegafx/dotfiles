@@ -36,12 +36,14 @@ pet() {
   command pet "$@"
 }
 
+source "$CODE_PATH/zsh-autosuggestions/zsh-autosuggestions.zsh"
 source "$CODE_PATH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export FZF_COMPLETION_TRIGGER='ff'
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 source "$CODE_PATH/fzf-tab/fzf-tab.plugin.zsh"
 
+eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
 
 # disable sort when completing `git checkout`

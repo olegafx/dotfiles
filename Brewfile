@@ -35,7 +35,7 @@ brew install jesseduffield/lazygit/lazygit
 brew install fzf
 /opt/homebrew/opt/fzf/install
 
-brew install battery
+brew install atuin
 brew install hyperfine
 brew install knqyf263/pet/pet
 

@@ -18,7 +18,6 @@ export LSCOLORS="fxfxcxdxbxegedabagacad"
 
 export STARSHIP_CONFIG="$DOTFILES_PATH/starship.toml"
 eval "$(starship init zsh)"
-
 PATH="$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 PATH="$HOME/.yarn/bin:$PATH"

@@ -1,5 +1,6 @@
 brew install bat
-brew install exa
+brew install eza
+brew install fd
 brew install gh
 brew install git
 brew install git-delta
@@ -37,6 +38,7 @@ brew install fzf
 
 brew install atuin
 brew install hyperfine
+brew install tlrc
 brew install knqyf263/pet/pet
 
 brew install --cask 1password-cli

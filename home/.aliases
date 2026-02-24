@@ -29,3 +29,5 @@ alias os="overmind start"
 alias osl="overmind start -l"
 alias v="open -a \"Visual Studio Code\""
 alias vim="nvim"
+
+title() { printf '\033]0;%s\007' "$*" }

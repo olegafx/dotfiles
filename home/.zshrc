@@ -51,6 +51,7 @@ bindkey '^^' redo
 _insert_newline() { LBUFFER+=$'\n'; }
 zle -N _insert_newline
 bindkey '\e[27;2;13~' _insert_newline
+zle_highlight=(region:bg=#3c5173)
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(zoxide init zsh)"

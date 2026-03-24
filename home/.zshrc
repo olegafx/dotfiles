@@ -44,6 +44,10 @@ autoload -Uz compinit && compinit
 export FZF_COMPLETION_TRIGGER='ff'
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
 source "$CODE_PATH/fzf-tab/fzf-tab.plugin.zsh"
+source "$CODE_PATH/zsh-shift-select/zsh-shift-select.plugin.zsh"
+
+bindkey '^_' undo
+bindkey '^^' redo
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(zoxide init zsh)"

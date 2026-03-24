@@ -48,6 +48,9 @@ source "$CODE_PATH/zsh-shift-select/zsh-shift-select.plugin.zsh"
 
 bindkey '^_' undo
 bindkey '^^' redo
+_insert_newline() { LBUFFER+=$'\n'; }
+zle -N _insert_newline
+bindkey '\e[27;2;13~' _insert_newline
 
 eval "$(atuin init zsh --disable-up-arrow)"
 eval "$(zoxide init zsh)"
